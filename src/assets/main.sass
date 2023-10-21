@@ -28,14 +28,16 @@ $secondary-button-color: $surface-color4
 
 $primary-font-family: 'Kanit', sans-serif
 
+body
+  margin: 0px
+  padding: 0px
+  background-color: $background-color
+  font-family: $primary-font-family
+  color: $primary-text-color
+
 .full-center-container
   display: flex
   flex-direction: column
-  position: absolute
-  left: 0px
-  right: 0px
-  top: 0px
-  bottom: 0px
   text-align: center
   align-items: center
   align-content: center
@@ -68,35 +70,35 @@ h1
 
 .headnav
   color: $primary-text-color
-  height: 50px
+  height: 1vw
   position: absolute
-  left: 15px
-  right: 15px
-  top: 15px
-  padding-left: 15px
-  padding-right: 15px
+  top: 1vw
+  left: .8vw
   display: flex
   flex-direction: row
   align-items: center
-  filter: drop-shadow(0 0 0.1rem $dark-primary-color)
-  border-radius: 15px
 
 .headnav-link
   font-family: $primary-font-family
   color: $light-color
   text-decoration: none
-  font-size: 1.5em
-  padding: 5px
-  margin: 5px
+  font-size: 1.1vw
+  padding-left: .8vw
+  padding-right: .8vw
+  padding-bottom: .2vw
   &:hover
     color: $text-hover-color
+
+.router-link-active
+  color: $text-hover-color
+  border-bottom: 1px solid $text-hover-color
 
 .home-title
   font-family: $primary-font-family
   color: $accent-color
-  font-size: 10em
+  font-size: 7vw
   margin: 0px
   padding: 0px
   position: absolute
-  bottom: 15px
-  left: 50px
+  bottom: 1vw
+  left: 1vw
