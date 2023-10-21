@@ -3,8 +3,9 @@
 <template>
   <main>
     <div class="full-center-container">
-      <img src="/src/assets/pictures/panther.png" style="width: 100%">
-      <h1 class="home-title">DARK MODE</h1>
+      <div style="width: 100%">
+        <img src="/src/assets/pictures/panther_home.png" style="width: 100%">
+      </div>
     </div>
   </main>
 </template>
