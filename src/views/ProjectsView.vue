@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import Project from "@/components/Project.vue"
+import Headnav from '../components/Headnav.vue'
 </script>
 
 <template>
   <v-app>
-    hello
+    <Headnav></Headnav>
   </v-app>
 </template>
 
