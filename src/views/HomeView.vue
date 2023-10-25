@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue"
-let pathToImage = new URL('/src/assets/panther_home.png', import.meta.url).href
+let pathToImage = new URL('/src/assets/panther_2560x1440.png', import.meta.url).href
 </script>
 
 <template>
