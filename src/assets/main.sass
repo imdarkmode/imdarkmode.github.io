@@ -33,58 +33,9 @@ $phone-font-size: 2.0vw
 $primary-header-font-size: 1.2vw
 $phone-header-font-size: 4vw
 
-body
-  margin: 0px
-  padding: 0px
-  background-color: $background-color
-  font-family: $primary-font-family
-  color: $primary-text-color
-
-.full-center-container
-  display: flex
-  flex-direction: column
-  text-align: center
-  align-items: center
-  align-content: center
-  justify-content: center
-  background-color: $background-color
-  position: absolute
-  top: 0px
-  bottom: 0px
-  left: 0px
-  right: 0px
-
-.light-btn
-  background-color: $primary-button-color
-  color: $dark-text-color
-  border: 1px solid $dark-primary-color
-  border-radius: 5px
-  padding: 5px
-  margin: 5px
-  cursor: pointer
-  &:hover
-    background-color: $secondary-button-color
-    color: $primary-text-color
-
-h1
-  font-family: $primary-font-family
-  color: $primary-text-color
-  font-size: $primary-header-font-size
-  font-size: 2em
-  margin: 0px
-  padding: 0px
-
-@mixin box-shadow($top, $left, $blur, $size, $color)
-  -webkit-box-shadow: $top $left $blur $size $color
-  -moz-box-shadow: $top $left $blur $size $color
-  box-shadow: $top $left $blur $size $color
-
 .toolbar
   color: $primary-text-color !important
   background-color: $surface-color !important
-
-.home-image
-  width: 100% !important
 
 @media only screen and (min-width : 0px) and (max-width: 621px)
   h1
