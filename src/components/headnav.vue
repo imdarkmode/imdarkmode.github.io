@@ -25,7 +25,7 @@ const items = ref([
 <template>
   <v-app>
     <v-container>
-      <v-app-bar color="primary" :elevation="8">
+      <v-app-bar color="surface" :elevation="8">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-app-bar-title>Dark Mode</v-app-bar-title>
         <v-spacer></v-spacer>
@@ -35,8 +35,17 @@ const items = ref([
       </v-app-bar>
     </v-container>
 
-    <v-navigation-drawer v-model="drawer" location="left" temporary>
+    <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
       <v-list :items="items"></v-list>
     </v-navigation-drawer>
   </v-app>
 </template>
+
+<style scoped lang="sass">
+
+.drawer-bg
+  background-color: #121212
+  opacity: 0.7
+
+</style>
+
