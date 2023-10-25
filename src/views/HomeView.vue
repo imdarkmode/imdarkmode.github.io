@@ -5,7 +5,7 @@ let pathToImage = new URL('/src/assets/panther_2560x1440.png', import.meta.url).
 
 <template>
   <v-app>
-    <v-img :src="pathToImage"></v-img>
+    <v-img cover :src="pathToImage"></v-img>
     <FeaturedProjects></FeaturedProjects>
   </v-app>
 </template>
