@@ -23,22 +23,18 @@ const items = ref([
 </script>
 
 <template>
-  <v-app>
-    <v-container>
-      <v-app-bar color="surface" :elevation="8">
-        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-app-bar-title>Dark Mode</v-app-bar-title>
-        <v-spacer></v-spacer>
-        <v-btn variant="text" icon="mdi-magnify"></v-btn>
-        <v-btn variant="text" icon="mdi-filter"></v-btn>
-        <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
-      </v-app-bar>
-    </v-container>
+  <v-app-bar color="surface" :elevation="8">
+    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-title>Dark Mode</v-app-bar-title>
+    <v-spacer></v-spacer>
+    <v-btn variant="text" icon="mdi-magnify"></v-btn>
+    <v-btn variant="text" icon="mdi-filter"></v-btn>
+    <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
+  </v-app-bar>
 
-    <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
-      <v-list :items="items"></v-list>
-    </v-navigation-drawer>
-  </v-app>
+  <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
+    <v-list :items="items"></v-list>
+  </v-navigation-drawer>
 </template>
 
 <style scoped lang="sass">
@@ -46,6 +42,7 @@ const items = ref([
 .drawer-bg
   background-color: #121212
   opacity: 0.7
+  z-index: 1000
 
 </style>
 
