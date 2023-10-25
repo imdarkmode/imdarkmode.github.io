@@ -4,8 +4,8 @@ let pathToPanther = new URL('/src/assets/panther_2560x1440.png', import.meta.url
 let pathToGithub = new URL('/src/assets/GitHub.png', import.meta.url).href
 let pathToYoutube = new URL('/src/assets/youtube.png', import.meta.url).href
 
-import Headnav from '../components/Headnav.vue'
-import Footer from '../components/Footer.vue'
+import Headnav from '@/components/Headnav.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
