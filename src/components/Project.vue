@@ -13,7 +13,7 @@ defineProps({
   <v-container class="container">
     <iframe width="300" :src="url"></iframe>
     <div class="text-container">
-      <h1>{{ header }}</h1>
+      <h2>{{ header }}</h2>
       <p>{{ text }}</p>
     </div>
 
