@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <v-container class="container">
-    <iframe width="300" :src="url"></iframe>
+    <iframe class="youtube" :src="url"></iframe>
     <div class="text-container">
       <h2>{{ header }}</h2>
       <p>{{ text }}</p>
@@ -21,11 +21,13 @@ defineProps({
 </template>
 
 <style scoped lang="sass">
+.youtube
+  width: 100%
+  flex: 1
 
 .container
-  margin-left: 60px
-  margin-right: 60px
   display: flex
+  flex-direction: row
   
 .text-container
   display: flex
@@ -33,6 +35,8 @@ defineProps({
   justify-content: center
   margin-left: 20px
   margin-right: 20px
+  flex: 3
+  
   
 
 </style>

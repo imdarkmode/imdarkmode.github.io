@@ -8,8 +8,8 @@ let length = ref(1)
 
 <template>
   <v-container
-    style="display: flex; justify-content: center; flex-direction: column; padding-left: 10%; padding-right: 10%;">
-    <h1 style="padding: 15px"> Featured Projects</h1>
+    style="display: flex; justify-content: center; flex-direction: column; padding-left: 10%; padding-right: 10%; margin-bottom: 50px">
+    <h2 style="padding: 15px"> Featured Projects</h2>
     <v-sheet border rounded :elevation="8">
       <v-window v-model="window" show-arrows>
         <v-window-item v-for="n in length" :key="n">

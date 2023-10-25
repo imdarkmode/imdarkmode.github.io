@@ -11,33 +11,31 @@ const items = ref([
   {
     title: 'About',
     value: 'about',
-  },
-  {
-    title: 'Contact',
-    value: 'contact',
-  },
+  }
 ])
 
 
 </script>
 
 <template>
-  <v-app-bar color="surface" :elevation="8">
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-app-bar-title style="cursor: pointer" @click="$router.push('/')">Dark Mode</v-app-bar-title>
-    <v-spacer></v-spacer>
-    <v-btn variant="text" icon="mdi-magnify"></v-btn>
-    <v-btn variant="text" icon="mdi-filter"></v-btn>
-    <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
-  </v-app-bar>
+  <v-container>
+    <v-app-bar color="surface" :elevation="8">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-title style="cursor: pointer" @click="$router.push('/')">Dark Mode</v-app-bar-title>
+      <!-- <v-spacer></v-spacer>
+      <v-btn variant="text" icon="mdi-magnify"></v-btn>
+      <v-btn variant="text" icon="mdi-filter"></v-btn>
+      <v-btn variant="text" icon="mdi-dots-vertical"></v-btn> -->
+    </v-app-bar>
 
-  <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
-    <v-list>
-      <v-list-item v-for="item in items" :to="item.value">
-        {{ item.title }}
-      </v-list-item>
-    </v-list>
-  </v-navigation-drawer>
+    <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
+      <v-list>
+        <v-list-item v-for="item in items" :to="item.value">
+          {{ item.title }}
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </v-container>
 </template>
 
 <style scoped lang="sass">
