@@ -4,7 +4,7 @@ import FeaturedProjects from "@/components/FeaturedProjects.vue"
 
 <template>
   <v-app>
-    <v-img cover src="/src/assets/panther_home.png"></v-img>
+    <v-img src="/src/assets/panther_home.png"></v-img>
     <FeaturedProjects></FeaturedProjects>
   </v-app>
 </template>
