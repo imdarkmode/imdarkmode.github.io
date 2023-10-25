@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Project from "@/components/Project.vue"
-import Headnav from '../components/Headnav.vue'
-import Footer from '../components/Footer.vue'
+import Headnav from '@/components/Headnav.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
