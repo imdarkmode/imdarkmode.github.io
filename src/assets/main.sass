@@ -79,49 +79,13 @@ h1
   -moz-box-shadow: $top $left $blur $size $color
   box-shadow: $top $left $blur $size $color
 
-.headnav
-  color: $primary-text-color
-  height: 1vw
-  position: absolute
-  top: 1vw
-  left: .8vw
-  display: flex
-  flex-direction: row
-  align-items: center
-
-.headnav-link
-  font-family: $primary-font-family
-  color: $light-color
-  text-decoration: none
-  font-size: $primary-header-font-size
-  padding-left: .8vw
-  padding-right: .8vw
-  padding-bottom: .2vw
-  &:hover
-    color: $text-hover-color
-
-.router-link-active
-  color: $text-hover-color
-  border-bottom: 1px solid $text-hover-color
-
-.home-title
-  font-family: $primary-font-family
-  color: $accent-color
-  font-size: 7vw
-  margin: 0px
-  padding: 0px
-  position: absolute
-  bottom: 1vw
-  left: 1vw
+.toolbar
+  color: $primary-text-color !important
+  background-color: $surface-color !important
 
 .home-image
   width: 100% !important
 
 @media only screen and (min-width : 0px) and (max-width: 621px)
-  .headnav-link
-    margin-top: 15px
-    margin-left: 15px
-    font-size: $phone-header-font-size
-
   h1
     font-size: $phone-header-font-size
