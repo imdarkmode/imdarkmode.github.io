@@ -25,7 +25,7 @@ const items = ref([
 <template>
   <v-app>
     <v-container>
-      <v-app-bar :elevation="8">
+      <v-app-bar color="primary" :elevation="8">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-app-bar-title>Dark Mode</v-app-bar-title>
         <v-spacer></v-spacer>
