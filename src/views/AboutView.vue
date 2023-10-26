@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Headnav from '@/components/Headnav.vue'
+// import Headnav from '@/components/Headnav.vue'
 import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
   <v-app>
-    <Headnav></Headnav>
+    <!-- <Headnav></Headnav> -->
     <v-container>
       <v-sheet class="about-sheet" rounded border>
 
