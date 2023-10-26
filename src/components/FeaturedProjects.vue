@@ -1,26 +1,55 @@
 <script setup lang="ts">
-import Project from "@/components/Project.vue"
+import FeaturedProject from "@/components/FeaturedProject.vue"
+import type { IFeaturedProject } from "@/interfaces"
 import { ref } from "vue"
 
 let window = ref(0)
-let length = ref(1)
+let featuredProjects: IFeaturedProject[] = [
+  {
+    header: "Inspect Game",
+    description: "A game where you use browser web tools.",
+    youtubeUrl: "https://www.youtube.com/embed/ZXlAVOFNTw4",
+    githubUrl: "https://github.com/thedarkmode/InspectGame",
+    websiteUrl: "https://thedarkmode.github.io/InspectGame/"
+  },
+  // {
+  //   header: "Inspect Game 2",
+  //   description: "A game where you use browser web tools.",
+  //   youtubeUrl: "https://www.youtube.com/embed/ZXlAVOFNTw4",
+  //   githubUrl: "https://github.com/thedarkmode/InspectGame",
+  //   websiteUrl: "https://thedarkmode.github.io/InspectGame/"
+  // },
+  // {
+  //   header: "Inspect Game 3",
+  //   description: "A game where you use browser web tools.",
+  //   youtubeUrl: "https://www.youtube.com/embed/ZXlAVOFNTw4",
+  //   githubUrl: "https://github.com/thedarkmode/InspectGame",
+  //   websiteUrl: "https://thedarkmode.github.io/InspectGame/"
+  // },
+]
+
 </script>
 
 <template>
-  <v-container
-    style="display: flex; justify-content: center; flex-direction: column; padding-left: 10%; padding-right: 10%; margin-bottom: 50px">
-    <h2 style="padding: 15px"> Featured Projects</h2>
-    <v-sheet border rounded :elevation="8">
-      <v-window v-model="window" show-arrows>
-        <v-window-item v-for="n in length" :key="n">
+  <h2 style="padding-top: 15px; justify-self: center; align-self: center;"> Featured Projects</h2>
+  <v-container class="featured-container">
+    <v-row>
+      <v-col v-for="project in featuredProjects">
+        <v-sheet border rounded :elevation="8">
           <v-card class="d-flex justify-center align-center">
-            <Project url="https://www.youtube.com/embed/ZXlAVOFNTw4" header="Video"
-              text="This is example video text. There will be something else here later."></Project>
+            <FeaturedProject class="featured-window" :header="project.header" :description="project.description"
+              :youtubeUrl="project.youtubeUrl" :githubUrl="project.githubUrl" :websiteUrl="project.websiteUrl">
+            </FeaturedProject>
           </v-card>
-        </v-window-item>
-      </v-window>
-    </v-sheet>
+        </v-sheet>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
-<style scoped lang="sass"></style>
+<style scoped lang="sass">
+
+.featured-container
+  margin-bottom: 50px
+
+</style>

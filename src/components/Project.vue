@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
+// TODO: finish this component
+
 defineProps({
   url: String,
   header: String,
@@ -36,7 +38,5 @@ defineProps({
   margin-left: 20px
   margin-right: 20px
   flex: 3
-  
-  
 
 </style>
