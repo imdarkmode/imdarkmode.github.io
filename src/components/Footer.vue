@@ -5,10 +5,10 @@ let pathToYoutube = new URL('/src/assets/youtube.png', import.meta.url).href
 
 
 <template>
-  <v-footer style="max-height: 100px">
+  <v-footer style="max-height: 100px" class="bg-image">
     <v-container class="footer-container">
       <h2 class="footer-text">Thanks for Visiting!</h2>
-      <v-divider :thickness="2" class="border-opacity-50" width="10%" color="black"></v-divider>
+      <v-divider :thickness="2" class="border-opacity-50" width="10%" color="white"></v-divider>
       <div class="footer-link-container">
         <v-icon class="footer-link" @click="">mdi-github</v-icon>
         <v-icon class="footer-link" @click="">mdi-web</v-icon>
@@ -29,7 +29,7 @@ let pathToYoutube = new URL('/src/assets/youtube.png', import.meta.url).href
 
 .footer-link-container
   display: flex
-  color: black
+  color: white
   justify-content: center
   align-items: center
   padding: 10px
@@ -40,6 +40,9 @@ let pathToYoutube = new URL('/src/assets/youtube.png', import.meta.url).href
   padding-right: 15px
 
 .footer-text
-  color: black
+  color: white
+
+.bg-image
+  background-image: url("/src/assets/dark_forest_2560x1440.png")
 
 </style>

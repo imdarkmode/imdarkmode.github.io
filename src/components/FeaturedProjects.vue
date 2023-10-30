@@ -31,8 +31,8 @@ let featuredProjects: IFeaturedProject[] = [
 </script>
 
 <template>
-  <h2 style="padding-top: 15px; justify-self: center; align-self: center;"> Featured Projects</h2>
   <v-container class="featured-container">
+    <h2 style="justify-self: center; align-self: center;"> Featured Projects</h2>
     <v-row>
       <v-col v-for="project in featuredProjects">
         <v-sheet border rounded :elevation="8">
@@ -50,6 +50,6 @@ let featuredProjects: IFeaturedProject[] = [
 <style scoped lang="sass">
 
 .featured-container
-  margin-bottom: 50px
+  padding-bottom: 25px
 
 </style>
