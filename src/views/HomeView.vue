@@ -18,7 +18,7 @@ function navigateTo(url: string) {
     <v-spacer></v-spacer>
     <v-row class="align-center justify-center test-row">
       <v-col style="flex-grow: 0">
-        <v-img class="img" height="300" width="300" src="/src/assets/me_levi_icon.png"></v-img>
+        <v-img class="img" height="300" width="300" src="src/assets/me_levi_icon.png"></v-img>
       </v-col>
       <v-col class="title-col">
         <v-row justify="center">
@@ -68,7 +68,7 @@ function navigateTo(url: string) {
   max-width: 500px
 
 .bg-image
-  background-image: url("/src/assets/dark_forest_2560x1440.png")
+  background-image: url("src/assets/dark_forest_2560x1440.png")
 
 .link-btn
   margin: 5px

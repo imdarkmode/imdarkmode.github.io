@@ -57,6 +57,6 @@ function navigateTo(url: string) {
   color: white
 
 .bg-image
-  background-image: url("/src/assets/dark_forest_2560x1440.png")
+  background-image: url("src/assets/dark_forest_2560x1440.png")
 
 </style>
