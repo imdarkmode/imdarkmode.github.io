@@ -23,7 +23,7 @@ const items = ref([
 
 <template>
   <v-container>
-    <v-app-bar image="src/assets/dark_forest_toolbar.png" :elevation="8">
+    <v-app-bar image="/src/assets/dark_forest_toolbar.png" :elevation="8">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-app-bar-title style="cursor: pointer" @click="$router.push('/')">Dark Mode</v-app-bar-title>
       <!-- <v-spacer></v-spacer>
