@@ -5,12 +5,16 @@ import { RouterLink, RouterView } from 'vue-router'
 const drawer = ref(false)
 const items = ref([
   {
+    title: 'Home',
+    value: '/',
+  },
+  {
     title: 'Projects',
-    value: 'projects',
+    value: '/projects',
   },
   {
     title: 'About',
-    value: 'about',
+    value: '/about',
   }
 ])
 
@@ -30,7 +34,7 @@ const items = ref([
 
     <v-navigation-drawer class="drawer-bg" v-model="drawer" location="left" temporary>
       <v-list>
-        <v-list-item v-for="item in items" :to="item.value">
+        <v-list-item v-for="item in items" @click="$router.push(item.value)">
           {{ item.title }}
         </v-list-item>
       </v-list>
