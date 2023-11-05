@@ -1,4 +1,4 @@
-export interface IFeaturedProject {
+export interface IProject {
   header: string;
   description: string;
   youtubeUrl: string;
