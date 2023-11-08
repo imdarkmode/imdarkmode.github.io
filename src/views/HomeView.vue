@@ -39,6 +39,13 @@ function navigateTo(url: string) {
     </v-row>
     <v-spacer></v-spacer>
   </v-container>
+  <v-container class="about">
+    <h2>What is Dark Mode?</h2>
+    <p>Hi, my name is Andrew! I'm a web developer with several years of experience contracting for large companies
+    </p>
+    <p>I created <b class="primary-color">Dark Mode</b> to experiment with, and push the boundaries of the web</p>
+    <p>Through these projects I hope to teach others, as well as myself, about web development!</p>
+  </v-container>
   <FeaturedProjects :numberToShow="3"></FeaturedProjects>
   <Footer></Footer>
 </template>
@@ -73,4 +80,9 @@ function navigateTo(url: string) {
 
 .test-row
   height: 100vh
+
+.about
+  justify-content: center
+  align-items: center
+  text-align: center
 </style>
