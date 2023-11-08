@@ -40,11 +40,14 @@ function navigateTo(url: string) {
     <v-spacer></v-spacer>
   </v-container>
   <v-container class="about">
-    <h2>What is Dark Mode?</h2>
-    <p>Hi, my name is Andrew! I'm a web developer with several years of experience contracting for large companies
-    </p>
-    <p>I created <b class="primary-color">Dark Mode</b> to experiment with, and push the boundaries of the web</p>
-    <p>Through these projects I hope to teach myself and others about web development!</p>
+    <h2 class="about-title">What is Dark Mode?</h2>
+    <div class="about-text">
+      <p>Hi, my name is Andrew! I'm a web developer with several years of experience contracting for large companies
+      </p>
+      <p>I created <b class="primary-color">Dark Mode</b> to experiment with, and push the boundaries of the web</p>
+      <p>Through these projects I hope to teach myself and others about web development!</p>
+    </div>
+
   </v-container>
   <FeaturedProjects :numberToShow="3"></FeaturedProjects>
   <Footer></Footer>
@@ -52,6 +55,11 @@ function navigateTo(url: string) {
 
 <style scoped lang="sass">
 @import "@/assets/variables.sass"
+.about-title
+  font-size: 40px
+
+.about-text
+  font-size: 20px
 
 .title
   font-size: 80px

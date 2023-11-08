@@ -38,7 +38,7 @@ const props = defineProps({
 .featured-container
   margin-top: 30px
   padding-bottom: 25px
-  padding-left: 10%
-  padding-right: 10%
+  padding-left: 15%
+  padding-right: 15%
 
 </style>@/data/data@/data

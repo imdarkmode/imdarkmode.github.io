@@ -33,21 +33,24 @@ function navigateTo(url: string) {
 <template>
   <v-container class="project-container">
     <v-row>
-      <v-col style="min-width: 300px; max-width: 450px;">
+      <v-col style="min-width: 300px; max-width: 550px;">
         <iframe class="youtube" :src="youtubeUrl"></iframe>
       </v-col>
       <v-col>
         <v-container>
           <v-row>
-            <h2 class="header">{{ header }}</h2>
-            <v-divider></v-divider>
+            <div class="header-bg">
+              <h2 class="header">{{ header }}</h2>
+            </div>
             <p class="description">{{ description }}</p>
           </v-row>
           <v-row>
-            <v-btn v-if="githubUrl" class="link-btn" color="primary"
-              @click="navigateTo(githubUrl)"><v-icon>mdi-github</v-icon>Github</v-btn>
-            <v-btn v-if="websiteUrl" class="link-btn" color="primary"
-              @click="navigateTo(websiteUrl)"><v-icon>mdi-web</v-icon>Website</v-btn>
+            <div class="btn-bg">
+              <v-btn v-if="githubUrl" class="link-btn" color="primary"
+                @click="navigateTo(githubUrl)"><v-icon>mdi-github</v-icon>Github</v-btn>
+              <v-btn v-if="websiteUrl" class="link-btn" color="primary"
+                @click="navigateTo(websiteUrl)"><v-icon>mdi-web</v-icon>Website</v-btn>
+            </div>
           </v-row>
         </v-container>
       </v-col>
@@ -58,16 +61,30 @@ function navigateTo(url: string) {
 <style scoped lang="sass">
 @import @/assets/variables.sass
 
+.header-bg
+  width: 100%
+  background-color: $surface-color3
+  border-radius: 15px
+  padding: 5px
+  display: flex
+  justify-content: center
+
+.btn-bg
+  width: 100%
+  display: flex
+  justify-content: center
+
 .youtube
   width: 100%
+  height: 100%
 
 .description
-  font-size: 13px
+  font-size: 18px
   margin-top: 5px
 
 .header
   color: white
-  font-size: 19px
+  font-size: 30px
 
 .link-btn
   margin: 5px
