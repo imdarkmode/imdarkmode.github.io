@@ -39,7 +39,7 @@ function navigateTo(url: string) {
     </v-row>
     <v-spacer></v-spacer>
   </v-container>
-  <FeaturedProjects></FeaturedProjects>
+  <FeaturedProjects :numberToShow="3"></FeaturedProjects>
   <Footer></Footer>
 </template>
 
