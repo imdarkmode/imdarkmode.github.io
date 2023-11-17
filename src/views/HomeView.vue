@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue"
+import FeaturedTools from "@/components/FeaturedTools.vue"
 let pathToIcon = new URL('/src/assets/me_levi_icon.png', import.meta.url).href
 
 import Headnav from '@/components/Headnav.vue'
@@ -49,6 +50,7 @@ function navigateTo(url: string) {
     </div>
 
   </v-container>
+  <FeaturedTools></FeaturedTools>
   <FeaturedProjects :numberToShow="3"></FeaturedProjects>
   <Footer></Footer>
 </template>
@@ -93,4 +95,5 @@ function navigateTo(url: string) {
   justify-content: center
   align-items: center
   text-align: center
+  margin-top: 40px
 </style>
