@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-let pathToForest = new URL('/src/assets/dark_forest_toolbar.png', import.meta.url).href
+let pathToForest = new URL('/src/assets/dark_forest_toolbar.webp', import.meta.url).href
 
 const drawer = ref(false)
 const items = ref([

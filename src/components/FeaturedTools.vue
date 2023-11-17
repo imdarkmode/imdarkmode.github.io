@@ -11,12 +11,12 @@
 
 <script setup lang="ts">
 let pathToIcons = [
-  new URL('/src/components/icons/vue_logo.png', import.meta.url).href,
-  new URL('/src/components/icons/react_logo.png', import.meta.url).href,
-  new URL('/src/components/icons/angular_logo.png', import.meta.url).href,
-  new URL('/src/components/icons/wordpress_logo.png', import.meta.url).href,
-  new URL('/src/components/icons/typescript_logo.png', import.meta.url).href,
-  new URL('/src/components/icons/python_logo.png', import.meta.url).href
+  new URL('/src/components/icons/vue_logo.webp', import.meta.url).href,
+  new URL('/src/components/icons/react_logo.webp', import.meta.url).href,
+  new URL('/src/components/icons/angular_logo.webp', import.meta.url).href,
+  new URL('/src/components/icons/wordpress_logo.webp', import.meta.url).href,
+  new URL('/src/components/icons/typescript_logo.webp', import.meta.url).href,
+  new URL('/src/components/icons/python_logo.webp', import.meta.url).href
 ]
 </script>
 

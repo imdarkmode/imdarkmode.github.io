@@ -1,6 +1,4 @@
 <script setup lang="ts">
-let pathToGithub = new URL('/src/assets/GitHub.png', import.meta.url).href
-let pathToYoutube = new URL('/src/assets/youtube.png', import.meta.url).href
 
 function navigateTo(url: string) {
   window.location.href = url
@@ -57,6 +55,6 @@ function navigateTo(url: string) {
   color: white
 
 .bg-image
-  background-image: url("/src/assets/dark_forest_2560x1440.png")
+  background-image: url("/src/assets/dark_forest_2560x1440.webp")
 
 </style>

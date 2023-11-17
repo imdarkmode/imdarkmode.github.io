@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue"
 import FeaturedTools from "@/components/FeaturedTools.vue"
-let pathToIcon = new URL('/src/assets/me_levi_icon.png', import.meta.url).href
+let pathToIcon = new URL('/src/assets/me_levi_icon.webp', import.meta.url).href
 
 import Headnav from '@/components/Headnav.vue'
 import Footer from '@/components/Footer.vue'
@@ -83,7 +83,7 @@ function navigateTo(url: string) {
   max-width: 500px
 
 .bg-image
-  background-image: url("/src/assets/dark_forest_2560x1440.png")
+  background-image: url("/src/assets/dark_forest_2560x1440.webp")
 
 .link-btn
   margin: 5px
