@@ -51,7 +51,7 @@ function navigateTo(url: string) {
 
   </v-container>
   <FeaturedTools></FeaturedTools>
-  <FeaturedProjects :numberToShow="3"></FeaturedProjects>
+  <FeaturedProjects :numberToShow="3" style="margin-bottom: 50px"></FeaturedProjects>
   <Footer></Footer>
 </template>
 
