@@ -21,7 +21,7 @@ const props = defineProps({
       <v-sheet border rounded :elevation="8" style="width: 100%; margin-bottom: 25px">
         <v-card class="d-flex justify-center align-center">
           <Project :header="project.header" :description="project.description" :youtubeUrl="project.youtubeUrl"
-            :githubUrl="project.githubUrl" :websiteUrl="project.websiteUrl"></Project>
+            :githubUrl="project.githubUrl" :websiteUrl="project.websiteUrl" :createdWith="project.createdWith"></Project>
         </v-card>
       </v-sheet>
     </v-row>

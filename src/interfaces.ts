@@ -4,4 +4,5 @@ export interface IProject {
   youtubeUrl: string;
   githubUrl: string;
   websiteUrl: string;
+  createdWith: Array<{ name: string, icon: string }>;
 }

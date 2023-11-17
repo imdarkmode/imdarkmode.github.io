@@ -12,10 +12,6 @@ const items = ref([
   {
     title: 'Projects',
     value: '/projects',
-  },
-  {
-    title: 'About',
-    value: '/about',
   }
 ])
 

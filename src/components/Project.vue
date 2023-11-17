@@ -22,6 +22,10 @@ defineProps({
     type: String,
     required: true
   },
+  createdWith: {
+    type: Array<{ name: string, icon: string }>,
+    required: true
+  }
 })
 
 function navigateTo(url: string) {
@@ -50,6 +54,12 @@ function navigateTo(url: string) {
                 @click="navigateTo(githubUrl)"><v-icon>mdi-github</v-icon>Github</v-btn>
               <v-btn v-if="websiteUrl" class="link-btn" color="primary"
                 @click="navigateTo(websiteUrl)"><v-icon>mdi-web</v-icon>Website</v-btn>
+            </div>
+          </v-row>
+          <v-row class="created-with-container">
+            <div v-for="c in createdWith" style="padding-left: 5px; padding-right: 5px">
+              <v-icon v-if="c.icon != ''">{{ c.icon }}</v-icon>
+              <span>{{ c.name }}</span>
             </div>
           </v-row>
         </v-container>
@@ -88,6 +98,15 @@ function navigateTo(url: string) {
 
 .link-btn
   margin: 5px
+
+.created-with-container
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+  font-size: 14px
+  opacity: 0.6
+  
 
 </style>
 
