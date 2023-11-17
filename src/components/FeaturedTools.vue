@@ -1,7 +1,8 @@
 <template>
   <v-container>
     <v-row justify="center" class="icon-container">
-      <v-sheet v-for="icon in pathToIcons" class="icon-bg" border rounded :elevation="8">
+      <v-sheet class="d-flex justify-center align-center icon-bg" v-for="icon in pathToIcons" border rounded
+        :elevation="8">
         <v-img class="icon" :src="icon"></v-img>
       </v-sheet>
     </v-row>
