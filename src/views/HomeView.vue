@@ -40,15 +40,16 @@ function navigateTo(url: string) {
     </v-row>
     <v-spacer></v-spacer>
   </v-container>
-  <v-container class="about">
-    <h2 class="about-title">What is Dark Mode?</h2>
-    <div class="about-text">
-      <p>Hi, my name is Andrew! I'm a web developer with several years of experience contracting for large companies
-      </p>
-      <p>I created <b class="primary-color">Dark Mode</b> to experiment with, and push the boundaries of the web</p>
-      <p>Through these projects I hope to teach myself and others about web development!</p>
-    </div>
-
+  <v-container class="d-flex justify-center align-center">
+    <v-sheet class="about-bg" border rounded :elevation="8">
+      <h2 class="about-title">What is <b class="primary-color">Dark Mode</b>?</h2>
+      <div class="about-text">
+        <p>Hi, my name is Andrew, I'm a web developer and the creator of Dark Mode!
+        </p>
+        <p>I created Dark Mode to experiment with, and push the boundaries of the web</p>
+        <p>Through these projects I hope to teach myself and others about web development!</p>
+      </div>
+    </v-sheet>
   </v-container>
   <FeaturedTools></FeaturedTools>
   <FeaturedProjects :numberToShow="3" style="margin-bottom: 50px"></FeaturedProjects>
@@ -91,9 +92,11 @@ function navigateTo(url: string) {
 .test-row
   height: 100vh
 
-.about
+.about-bg
   justify-content: center
   align-items: center
   text-align: center
-  margin-top: 40px
+  margin-top: 40px  
+  padding: 20px
+
 </style>
