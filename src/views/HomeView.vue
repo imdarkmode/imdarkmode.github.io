@@ -28,6 +28,14 @@ function navigateTo(url: string) {
         <v-row justify="center">
           <v-btn class="link-btn" color="primary"
             @click="navigateTo('https://www.youtube.com/channel/UC-qdwsjhmZ6eS8rlk2lg1Jw')"><v-icon>mdi-youtube</v-icon>Youtube</v-btn>
+          <v-btn class="link-btn" @click="navigateTo('https://www.tiktok.com/@imdarkmode')"><v-icon>
+              <svg style="padding-right: 2px" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+              </svg>
+            </v-icon>Tik
+            Tok</v-btn>
           <v-btn class="link-btn"
             @click="navigateTo('https://github.com/thedarkmode?tab=repositories')"><v-icon>mdi-github</v-icon>Github</v-btn>
           <v-btn class="link-btn" @click="navigateTo('https://discord.gg/GmPZ3e7tZH')"><svg
@@ -40,15 +48,16 @@ function navigateTo(url: string) {
     </v-row>
     <v-spacer></v-spacer>
   </v-container>
-  <v-container class="about">
-    <h2 class="about-title">What is Dark Mode?</h2>
-    <div class="about-text">
-      <p>Hi, my name is Andrew! I'm a web developer with several years of experience contracting for large companies
-      </p>
-      <p>I created <b class="primary-color">Dark Mode</b> to experiment with, and push the boundaries of the web</p>
-      <p>Through these projects I hope to teach myself and others about web development!</p>
-    </div>
-
+  <v-container class="d-flex justify-center align-center">
+    <v-sheet class="about-bg" border rounded :elevation="8">
+      <h2 class="about-title">What is <b class="primary-color">Dark Mode</b>?</h2>
+      <div class="about-text">
+        <p>Hi, my name is Andrew, I'm a web developer and the creator of Dark Mode!
+        </p>
+        <p>I created Dark Mode to experiment with, and push the boundaries of the web</p>
+        <p>Through these projects I hope to teach myself and others about web development!</p>
+      </div>
+    </v-sheet>
   </v-container>
   <FeaturedTools></FeaturedTools>
   <FeaturedProjects :numberToShow="3" style="margin-bottom: 50px"></FeaturedProjects>
@@ -91,9 +100,11 @@ function navigateTo(url: string) {
 .test-row
   height: 100vh
 
-.about
+.about-bg
   justify-content: center
   align-items: center
   text-align: center
-  margin-top: 40px
+  margin-top: 40px  
+  padding: 20px
+
 </style>
