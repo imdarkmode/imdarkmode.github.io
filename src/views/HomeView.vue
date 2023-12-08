@@ -104,7 +104,6 @@ function navigateTo(url: string) {
   margin: 5px
   
 .projects-btn
-  width: 150px
   margin: 5px
   align-self: center
 
