@@ -60,7 +60,13 @@ function navigateTo(url: string) {
     </div>
   </v-container>
   <FeaturedTools></FeaturedTools>
-  <FeaturedProjects :numberToShow="3" style="margin-bottom: 50px"></FeaturedProjects>
+  <v-container class="d-flex justify-center align-center">
+    <h2 class="about-title">Featured Projects</h2>
+  </v-container>
+  <FeaturedProjects :numberToShow="3"></FeaturedProjects>
+  <v-btn class="projects-btn" color="primary" style="margin-bottom: 50px"
+    @click="$router.push('/projects')"><v-icon>mdi-wrench</v-icon>All
+    Projects</v-btn>
   <Footer></Footer>
 </template>
 
@@ -96,6 +102,11 @@ function navigateTo(url: string) {
 
 .link-btn
   margin: 5px
+  
+.projects-btn
+  width: 150px
+  margin: 5px
+  align-self: center
 
 .test-row
   height: 100vh
