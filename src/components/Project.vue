@@ -37,32 +37,30 @@ function navigateTo(url: string) {
 <template>
   <v-container class="project-container">
     <v-row>
-      <v-col style="min-width: 300px; max-width: 550px;">
+      <v-col style="min-width: 300px; max-width: 390px;">
         <iframe class="youtube" :src="youtubeUrl"></iframe>
       </v-col>
       <v-col>
-        <v-container>
-          <v-row>
-            <div class="header-bg">
-              <h2 class="header">{{ header }}</h2>
-            </div>
-            <p class="description">{{ description }}</p>
-          </v-row>
-          <v-row>
-            <div class="btn-bg">
-              <v-btn v-if="githubUrl" class="link-btn" color="primary"
-                @click="navigateTo(githubUrl)"><v-icon>mdi-github</v-icon>Github</v-btn>
-              <v-btn v-if="websiteUrl" class="link-btn" color="primary"
-                @click="navigateTo(websiteUrl)"><v-icon>mdi-web</v-icon>Website</v-btn>
-            </div>
-          </v-row>
-          <v-row class="created-with-container">
-            <div v-for="c in createdWith" style="padding-left: 5px; padding-right: 5px">
-              <v-icon v-if="c.icon != ''">{{ c.icon }}</v-icon>
-              <span>{{ c.name }}</span>
-            </div>
-          </v-row>
-        </v-container>
+        <v-row>
+          <div class="header-bg">
+            <h2 class="header">{{ header }}</h2>
+          </div>
+          <p class="description">{{ description }}</p>
+        </v-row>
+        <v-row>
+          <div class="btn-bg">
+            <v-btn v-if="githubUrl" class="link-btn" color="primary"
+              @click="navigateTo(githubUrl)"><v-icon>mdi-github</v-icon>Github</v-btn>
+            <v-btn v-if="websiteUrl" class="link-btn" color="primary"
+              @click="navigateTo(websiteUrl)"><v-icon>mdi-web</v-icon>Website</v-btn>
+          </div>
+        </v-row>
+        <v-row class="created-with-container">
+          <div v-for="c in createdWith" style="padding-left: 5px; padding-right: 5px">
+            <v-icon v-if="c.icon != ''">{{ c.icon }}</v-icon>
+            <span>{{ c.name }}</span>
+          </div>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
@@ -87,6 +85,8 @@ function navigateTo(url: string) {
 .youtube
   width: 100%
   height: 100%
+  min-height: 200px
+  max-width: 390px
 
 .description
   font-size: 18px
@@ -100,9 +100,7 @@ function navigateTo(url: string) {
   margin: 5px
 
 .created-with-container
-  display: flex
   justify-content: center
-  align-items: center
   flex-direction: row
   font-size: 14px
   opacity: 0.6
