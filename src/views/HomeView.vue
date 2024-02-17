@@ -49,6 +49,7 @@ function navigateTo(url: string) {
   </v-container>
   <v-container class="d-flex justify-center align-center">
     <div class="about-bg">
+      <v-divider style="margin-bottom: 15px"></v-divider>
       <h2 class="about-title">What is <b class="primary-color">Dark Mode</b>?</h2>
       <div class="about-text">
         <p>Hi, my name is Andrew, I'm a web developer and the creator of Dark Mode!
@@ -56,7 +57,9 @@ function navigateTo(url: string) {
         <p>I created Dark Mode to experiment with, and push the boundaries of the web</p>
         <p>Through these projects I hope to teach myself and others about web development!</p>
       </div>
+      <v-divider style="margin-top: 15px"></v-divider>
     </div>
+
   </v-container>
   <FeaturedTools></FeaturedTools>
   <v-container class="d-flex justify-center align-center">
