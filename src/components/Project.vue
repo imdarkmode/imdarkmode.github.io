@@ -71,11 +71,12 @@ function navigateTo(url: string) {
 
 .header-bg
   width: 100%
-  background-color: $surface-color3
-  border-radius: 15px
+  background-color: $surface-color
+  border-radius: 8px
   padding: 5px
   display: flex
   justify-content: center
+  box-shadow: 5px 5px 5px #0c0c0c
 
 .btn-bg
   width: 100%
@@ -87,6 +88,7 @@ function navigateTo(url: string) {
   height: 100%
   min-height: 200px
   max-width: 390px
+  box-shadow: 5px 5px 5px #0c0c0c
 
 .description
   font-size: 18px
@@ -98,6 +100,7 @@ function navigateTo(url: string) {
 
 .link-btn
   margin: 5px
+  box-shadow: 5px 5px 5px #0c0c0c
 
 .created-with-container
   justify-content: center

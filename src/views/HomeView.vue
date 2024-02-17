@@ -101,10 +101,12 @@ function navigateTo(url: string) {
 
 .link-btn
   margin: 5px
+  box-shadow: 5px 5px 5px #0c0c0c
   
 .projects-btn
   margin: 5px
   align-self: center
+  box-shadow: 5px 5px 5px #0c0c0c
 
 .test-row
   height: 100vh

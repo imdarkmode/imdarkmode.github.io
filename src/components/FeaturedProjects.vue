@@ -17,13 +17,12 @@ const props = defineProps({
 
 <template>
   <v-container class="featured-container">
+    <v-divider></v-divider>
     <v-row v-for="project in projects.slice(0, numberToShow)">
-      <v-sheet border rounded :elevation="8" style="width: 100%; margin-bottom: 25px">
-        <v-card class="d-flex justify-center align-center">
-          <Project :header="project.header" :description="project.description" :youtubeUrl="project.youtubeUrl"
-            :githubUrl="project.githubUrl" :websiteUrl="project.websiteUrl" :createdWith="project.createdWith"></Project>
-        </v-card>
-      </v-sheet>
+      <Project class="project" :header="project.header" :description="project.description"
+        :youtubeUrl="project.youtubeUrl" :githubUrl="project.githubUrl" :websiteUrl="project.websiteUrl"
+        :createdWith="project.createdWith"></Project>
+      <v-divider></v-divider>
     </v-row>
   </v-container>
 </template>
@@ -36,9 +35,12 @@ const props = defineProps({
   margin-bottom: 15px
 
 .featured-container
-  margin-top: 30px
-  padding-bottom: 25px
   padding-left: 15%
   padding-right: 15%
+
+.project
+  margin-top: 15px
+  margin-bottom: 15px
+  padding: 20px
 
 </style>@/data/data@/data
