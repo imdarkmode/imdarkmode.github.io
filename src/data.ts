@@ -2,6 +2,27 @@ import type { IProject } from "@/interfaces";
 
 let projects: IProject[] = [
   {
+    header: "How to Create a Jackbox Party Game Web App",
+    description: "This quick & easy guide will show you how to make a Jackbox-like connection that your friends can join on their phones! I'll explain both the client & server side of this web development project.",
+    youtubeUrl: "https://www.youtube.com/embed/dXj8Ve9gHSA",
+    githubUrl: "https://github.com/thedarkmode/jackbox",
+    websiteUrl: "https://thedarkmode.github.io/jackbox/",
+    createdWith: [
+      {
+        name: "VueJS",
+        icon: ""
+      },
+      {
+        name: "NodeJS",
+        icon: ""
+      },
+      {
+        name: "Socket.io",
+        icon: ""
+      }
+    ]
+  },
+  {
     header: "I Made a Puzzle Where Each Piece is a Website",
     description: "Each piece is its own website instance! Using some abnormal browser tricks, they are able to communicate with each other to know when the puzzle is complete! I'll walk you through the entire process, introduce you to my bearded dragon Levi, and show some funny clips from development!",
     youtubeUrl: "https://www.youtube.com/embed/-PTR628Zr3Q",
@@ -9,7 +30,7 @@ let projects: IProject[] = [
     websiteUrl: "https://thedarkmode.github.io/windowpuzzle/",
     createdWith: [
       {
-        name: "Vue.js",
+        name: "VueJS",
         icon: ""
       }
     ]
@@ -22,7 +43,7 @@ let projects: IProject[] = [
     websiteUrl: "https://thedarkmode.github.io/parallaxwindows",
     createdWith: [
       {
-        name: "Vue.js",
+        name: "VueJS",
         icon: ""
       }
     ]
@@ -35,7 +56,7 @@ let projects: IProject[] = [
     websiteUrl: "https://thedarkmode.github.io/WebsiteDepths",
     createdWith: [
       {
-        name: "Vue.js",
+        name: "VueJS",
         icon: ""
       }
     ]
