@@ -107,7 +107,7 @@ function navigateTo(url: string) {
   box-shadow: 5px 5px 5px #0c0c0c
   
 .projects-btn
-  margin: 5px
+  margin-top: 15px
   align-self: center
   box-shadow: 5px 5px 5px #0c0c0c
 
