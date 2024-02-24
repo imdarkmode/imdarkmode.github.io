@@ -2,8 +2,8 @@ import type { IProject } from "@/interfaces";
 
 let projects: IProject[] = [
   {
-    header: "How to Create a Jackbox Party Game Web App",
-    description: "This quick & easy guide will show you how to make a Jackbox-like connection that your friends can join on their phones! I'll explain both the client & server side of this web development project.",
+    header: "I Built a Jackbox Party Game App!",
+    description: "This guide will show you how to make a Jackbox-like connection that your friends can join on their phones! I'll explain both the client & server side of this web development project.",
     youtubeUrl: "https://www.youtube.com/embed/dXj8Ve9gHSA",
     githubUrl: "https://github.com/thedarkmode/jackbox",
     websiteUrl: "https://thedarkmode.github.io/jackbox/",
