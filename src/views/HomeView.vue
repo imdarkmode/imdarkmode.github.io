@@ -36,7 +36,7 @@ function navigateTo(url: string) {
               </svg>
             </v-icon>TikTok</v-btn>
           <v-btn class="link-btn"
-            @click="navigateTo('https://github.com/thedarkmode?tab=repositories')"><v-icon>mdi-github</v-icon>Github</v-btn>
+            @click="navigateTo('https://github.com/imdarkmode?tab=repositories')"><v-icon>mdi-github</v-icon>Github</v-btn>
           <v-btn class="link-btn" @click="navigateTo('https://discord.gg/GmPZ3e7tZH')"><svg
               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path fill="currentColor"
