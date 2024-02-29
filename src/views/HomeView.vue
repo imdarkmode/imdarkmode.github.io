@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue"
 import FeaturedTools from "@/components/FeaturedTools.vue"
-let pathToIcon = new URL('/src/assets/me_levi_icon.webp', import.meta.url).href
+let pathToIcon = new URL('/src/assets/dark_mode_logo_circle.webp', import.meta.url).href
 
 import Headnav from '@/components/Headnav.vue'
 import Footer from '@/components/Footer.vue'
@@ -104,7 +104,7 @@ function navigateTo(url: string) {
 
 .link-btn
   margin: 5px
-  box-shadow: 5px 5px 5px #0c0c0c
+  box-shadow: 2px 2px 2px #0c0c0c
   
 .projects-btn
   margin-top: 15px
