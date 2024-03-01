@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FeaturedProjects from "@/components/FeaturedProjects.vue"
 import FeaturedTools from "@/components/FeaturedTools.vue"
-let pathToIcon = new URL('/src/assets/dark_mode_logo_circle.webp', import.meta.url).href
+let pathToIcon = new URL('/src/assets/dark_mode_logo_circle_75.png', import.meta.url).href
 
 import Headnav from '@/components/Headnav.vue'
 import Footer from '@/components/Footer.vue'
